@@ -12,3 +12,12 @@ for(let i =0;i<botoes.length;i++){
         }
     }
 }
+let dias = Math.floor( horas/24);
+seguando %=60;
+minutos %=60;
+horas%= 24
+if(tempoFinal>0){
+    return [dias,horas,minutos,segundo];
+} else{
+    return[0,0,0];
+}
